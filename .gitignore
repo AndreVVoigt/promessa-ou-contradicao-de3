@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Bancos locais
+*.duckdb
+*.duckdb.wal
+*.db
+
+# Dados
+data/bronze/
+data/silver/
+
+!data/bronze/.gitkeep
+!data/bronze/metadata/.gitkeep
+!data/silver/.gitkeep
+
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# SO
+.DS_Store
+Thumbs.db
