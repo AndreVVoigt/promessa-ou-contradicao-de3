@@ -41,7 +41,7 @@ def test_qualidade_dos_dados_silver():
         pytest.fail(f"\n{relatorio}", pytrace=False)
 
 def test_qualidade_dos_dados_documents():
-    df_documents = pd.read_csv("data/mock/documents_mock.csv")
+    df_documents = pd.read_csv("data/mock/documents_broken.csv")
     try:
         schema_documents.validate(df_documents, lazy=True)
     except pa.errors.SchemaErrors as err:
